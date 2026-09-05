@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment (never commit secrets)
+.env
+.env.local
+.env.*.local
+server/.env
+client/.env
+
+# Python
+ml-service/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build output
+client/dist/
+server/dist/
+
+# Runtime data (threads persisted locally)
+server/data/*.json
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

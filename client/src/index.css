@@ -1,0 +1,102 @@
+/* Global reset and tokens for the chat workspace (light theme, purple accent). */
+:root {
+  --bg: #f9f9f9;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --border: #e8e8ec;
+  --shadow: 0 12px 40px rgba(17, 24, 39, 0.08);
+  --accent: #8b5cf6;
+  --accent-strong: #7c3aed;
+  --accent-soft: rgba(139, 92, 246, 0.12);
+  --radius: 16px;
+  --radius-sm: 12px;
+  --sidebar-w: 72px;
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --msg-user-bg: #f3f4f6;
+  --code-block-bg: #1e1b4b;
+  --code-block-fg: #f5f3ff;
+}
+
+html[data-theme='dark'] {
+  --bg: #111827;
+  --surface: #1f2937;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --border: #374151;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  --accent: #a78bfa;
+  --accent-strong: #c4b5fd;
+  --accent-soft: rgba(167, 139, 250, 0.15);
+  --msg-user-bg: #374151;
+  --code-block-bg: #0f172a;
+  --code-block-fg: #e2e8f0;
+}
+
+html[data-theme='dark'] .suggestion-card {
+  background: #374151;
+}
+
+html[data-theme='dark'] .btn-ghost {
+  background: #374151;
+  color: var(--text);
+}
+
+html[data-theme='dark'] .btn-ghost:hover {
+  background: #4b5563;
+}
+
+html[data-theme='dark'] .ml-panel {
+  background: #1f2937;
+  border-color: var(--border);
+}
+
+html[data-theme='dark'] .sidebar-avatar {
+  background: #374151;
+  color: var(--muted);
+}
+
+html[data-theme='dark'] .msg-body p code {
+  background: #374151;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
